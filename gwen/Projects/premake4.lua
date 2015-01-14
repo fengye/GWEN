@@ -78,6 +78,11 @@ if ( os.get() == "windows" ) then
 	includedirs { "$(DXSDK_DIR)/Include" }
 	libdirs { "$(DXSDK_DIR)/lib/x86" }
 
+    DefineRenderer( "DirectX10",
+                    { "../Renderers/DirectX10/DirectX10.cpp" } )
+    includedirs { "$(DXSDK_DIR)/Include" }
+    libdirs { "$(DXSDK_DIR)/lib/x86" }
+
 	DefineRenderer( "Direct2D",
                     { "../Renderers/Direct2D/Direct2D.cpp" } )
 	includedirs { "$(DXSDK_DIR)/Include" }
@@ -124,6 +129,12 @@ if ( os.get() == "windows" ) then
                   { "UnitTest", "Renderer-DirectX9", "GWEN-Static" } )
 	includedirs { "$(DXSDK_DIR)/Include" }
 	libdirs { "$(DXSDK_DIR)/lib/x86" }
+
+	DefineSample( "DirectX10",
+                  { "../Samples/Direct3D10/Direct3D10Sample.cpp"},
+                  { "UnitTest", "Renderer-DirectX10", "GWEN-Static"} )
+    includedirs { "$(DXSDK_DIR)/Include" }
+    libdirs { "$(DXSDK_DIR)/lib/x86" }    
 
 	DefineSample( "WindowsGDI",
                   { "../Samples/WindowsGDI/WindowsGDI.cpp" },
