@@ -1,5 +1,3 @@
-
-
 ALLEGRO_LIBS	= { "UnitTest", "Renderer-Allegro", "GWEN-Static",
                     "allegro-5.0.4-monolith-mt" }
 ALLEGRO_LIBS_D	= { "UnitTest", "Renderer-Allegro", "GWEN-Static",
@@ -18,3 +16,5 @@ SFML2_LIBS_D	= { "UnitTest", "Renderer-SFML2", "GWEN-Static", "sfml-main-d",
 SFML2_DEFINES	= { "SFML_STATIC" }
 
 CROSS_LIBS 		= { "UnitTest", "Renderer-OpenGL_DebugFont", "GWEN-Static", "opengl32", "freeimage" }
+
+IRRLICHT_LIBS	= { "UnitTest", "Renderer-Irrlicht", "GWEN-Static"}

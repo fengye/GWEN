@@ -72,6 +72,9 @@ DefineRenderer( "SFML2",
 DefineRenderer( "Allegro",
                 { "../Renderers/Allegro/Allegro.cpp" } )
 
+DefineRenderer( "Irrlicht",
+                { "../Renderers/Irrlicht/Irrlicht.cpp" } )
+
 if ( os.get() == "windows" ) then
 	DefineRenderer( "DirectX9",
                     { "../Renderers/DirectX9/DirectX9.cpp" } )
@@ -114,6 +117,10 @@ DefineSample( "SFML2",
 DefineSample( "Allegro",
               { "../Samples/Allegro/AllegroSample.cpp" },
               ALLEGRO_LIBS, ALLEGRO_LIBS_D )
+
+DefineSample( "Irrlicht",
+			  { "../Samples/Irrlicht/IrrlichtSample.cpp"},
+			  IRRLICHT_LIBS)
 
 if ( os.get() == "windows" ) then
 
